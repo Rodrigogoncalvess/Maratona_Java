@@ -7,7 +7,7 @@ public class EstruturasCondicionais02 {
         // age >= 15 && < 18 category juvenile
         //age >= 18 category adult
 
-        int age = 12;
+        int age = 13;
         String category;
 
 
