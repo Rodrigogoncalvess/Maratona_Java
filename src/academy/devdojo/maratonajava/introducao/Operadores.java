@@ -46,7 +46,25 @@ public class Operadores {
         boolean isPlaystationFiveBuyable = valueTotalCurrentAccount > valuePlaystation || valueTotalSavingAccount > valuePlaystation;
         System.out.println("isPlaystationFiveBuyable "+isPlaystationFiveBuyable);
 
-//
+//      = += -= /= %=
+
+        double bonus = 1800; //1800
+        bonus += 1000; // 2800
+        bonus -= 1000; // 1800
+        bonus *= 2;
+        bonus /= 2;
+        bonus %= 2;
+        System.out.println(bonus);
+
+        //
+        int counter = 0;
+        counter += 1; //counter = counter + 1
+        counter ++;
+        counter --;
+        ++counter;
+        --counter;
+        int counter2 = 0;
+        System.out.println(counter2++);
 
     }
 }
