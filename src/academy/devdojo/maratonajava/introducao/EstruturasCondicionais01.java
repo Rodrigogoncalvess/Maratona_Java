@@ -6,16 +6,16 @@ public class EstruturasCondicionais01 {
         boolean isAuthorizedBuyDink = age >= 18;
 
         // !
-        if (isAuthorizedBuyDink){
+        if (isAuthorizedBuyDink) {
             System.out.println("Autorizado a comprar bebida alcólica");
-        }else{
+        } else {
             System.out.println("Não autorizado a comprar bebida alcólica");
         }
-        if (!isAuthorizedBuyDink){
+        if (!isAuthorizedBuyDink) {
             System.out.println("Não autorizado a comprar bebida alcólica");
         }
         boolean c = false;
-        if ( c = true){
+        if (c = true) {
             System.out.println("Dentro de algo que nunca deve ser feito");
         }
         System.out.println("Fora if");
