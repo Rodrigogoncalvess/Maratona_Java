@@ -5,6 +5,7 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String estudio;
 
     public Anime(String nome,String tipo,int episodios,String genero){
         System.out.println("Dentro do construtor");
@@ -13,7 +14,12 @@ public class Anime {
         this.episodios = episodios;
         this.genero = genero;
     }
+    public Anime(String nome,String tipo,int episodios,String genero, String estudio) {
+        this(nome,tipo,episodios,genero);
+        this.estudio = estudio;
+    }
     public Anime(){
+        System.out.println("Dentro do construtor sem argumentos");
 
     }
 
@@ -22,6 +28,7 @@ public class Anime {
         System.out.println(this.tipo);
         System.out.println(this.episodios);
         System.out.println(this.genero);
+        System.out.println(this.estudio);
     }
 
     public String getNome() {
@@ -54,5 +61,13 @@ public class Anime {
 
     public void setGenero(String genero) {
         this.genero = genero;
+    }
+
+    public String getEstudio() {
+        return estudio;
+    }
+
+    public void setEstudio(String estudio) {
+        this.estudio = estudio;
     }
 }
