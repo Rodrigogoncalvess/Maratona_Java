@@ -10,10 +10,11 @@ public class Carro {
         this.velocidadeMaxima = velocidadeMaxima;
     }
     public void imprime(){
-        System.out.println(nome);
-        System.out.println(velocidadeMaxima);
-        System.out.println(velocidadeLimite);
+        System.out.println("Nome " + this.nome);
+        System.out.println("Velocidade máxima " + this.velocidadeMaxima);
+        System.out.println("Velocidade limite " +Carro.velocidadeLimite);
     }
+
 
     public String getNome() {
         return nome;
