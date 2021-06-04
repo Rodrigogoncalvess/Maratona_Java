@@ -6,8 +6,21 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
 
+    static {
+        System.out.println("Dentro do bloco de inicializaçõa estática de Pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicializaçõa de Pessoa 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicializaçõa de Pessoa 2");
+    }
+
     public Pessoa(String nome) {
         this.nome = nome;
+        System.out.println("Dentro do construtor de pessoa");
     }
 
     public Pessoa(String nome, String cpf) {
