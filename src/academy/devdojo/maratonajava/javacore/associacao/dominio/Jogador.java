@@ -32,4 +32,5 @@ public class Jogador {
     public void setTime(Time time) {
         this.time = time;
     }
+
 }
