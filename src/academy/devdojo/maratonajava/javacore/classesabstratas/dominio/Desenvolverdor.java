@@ -18,4 +18,6 @@ public class Desenvolverdor extends Funcionario{
                 ", salario=" + salario +
                 '}';
     }
+
+
 }
