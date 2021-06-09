@@ -50,6 +50,7 @@ public class Professor {
         this.nome = nome;
     }
 
+
     public String getEspecialidade() {
         return especialidade;
     }
@@ -65,4 +66,5 @@ public class Professor {
     public void setSeminarios(Seminario[] seminarios) {
         this.seminarios = seminarios;
     }
+
 }
