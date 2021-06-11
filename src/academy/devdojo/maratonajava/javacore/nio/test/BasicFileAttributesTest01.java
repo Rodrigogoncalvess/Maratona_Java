@@ -23,8 +23,7 @@ public class BasicFileAttributesTest01 {
         Files.setLastModifiedTime(path, fileTime);
         System.out.println(Files.isWritable(path));
         System.out.println(Files.isReadable(path));
-        ;
         System.out.println(Files.isExecutable(path));
-        ;
+
     }
 }
