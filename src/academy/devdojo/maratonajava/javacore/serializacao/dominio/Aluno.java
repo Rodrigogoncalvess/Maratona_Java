@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Aluno implements Serializable {
 
-    @Serial
+
     private static final long serialVersionUID = 6452820952337485602L;
 
     private long id;
@@ -20,7 +20,7 @@ public class Aluno implements Serializable {
         this.nome = nome;
         this.password = password;
     }
-    @Serial
+
     private void writeObject(ObjectOutputStream oos){
         try {
             oos.defaultWriteObject();
@@ -30,7 +30,7 @@ public class Aluno implements Serializable {
             exception.printStackTrace();
         }
     }
-    @Serial
+
     private void readObject(ObjectInputStream ois){
         try {
             ois.defaultReadObject();
