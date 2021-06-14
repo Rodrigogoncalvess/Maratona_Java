@@ -27,9 +27,14 @@ public class Smartphone {
 
     }
 
+    // se x .equlas(y) == true, y.hashCode() == x.hashCode()
+    // y.hashCode() == x.hashCode() não necessariamente o equlas de y.equals(x) te que ser true
+    // x.equals(y) == false
+    // y.hashCode() != x.hashCode() x.equals(y) deverá ser false
+
     @Override
     public int hashCode() {
-        return Objects.hash(serialNumber, getMarca());
+        return serialNumber == null ? 0 : this.serialNumber.hashCode();
     }
 
     public String getSeriaNumber() {
