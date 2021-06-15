@@ -33,10 +33,10 @@ public class NavigableSetTest01 {
 
         }
         Manga yuyu = new Manga(21L, "Yuyu Hakusho", 3.2, 5);
-        //lower
-        //floor
-        // higher
-        // ceiling
+        //lower <
+        //floor <=
+        // higher >
+        // ceiling >=
 
         System.out.println("--------------");
         System.out.println(mangas.lower(yuyu));
