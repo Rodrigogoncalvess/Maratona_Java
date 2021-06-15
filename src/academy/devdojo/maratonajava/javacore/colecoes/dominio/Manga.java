@@ -48,8 +48,8 @@ public class Manga implements Comparable<Manga> {
 //        }else {
 //            return 1;
 //        }
-//        return this.nome.compareTo(outroManga.getNome());
-        return Double.compare(preco,outroManga.getPreco());
+        return this.nome.compareTo(outroManga.getNome());
+//        return Double.compare(preco,outroManga.getPreco());
 //        return this.id.compareTo(outroManga.getId());
 
     }
