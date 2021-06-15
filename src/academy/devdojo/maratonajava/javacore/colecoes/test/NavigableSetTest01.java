@@ -13,6 +13,15 @@ class SmartphoneMarcaComparator implements Comparator<Smartphone> {
     }
 }
 
+class MangaPrecoComparator implements Comparator<Manga>{
+
+    @Override
+    public int compare(Manga o1, Manga o2) {
+        return Double.compare(o1.getPreco(), o2.getPreco());
+    }
+}
+
+
 public class NavigableSetTest01 {
     public static void main(String[] args) {
         NavigableSet<Smartphone> set = new TreeSet<>(new SmartphoneMarcaComparator());
